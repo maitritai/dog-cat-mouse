@@ -1,8 +1,8 @@
 function Mouse(name) {
-	this.width = 14;
-	this.height = 12;
-	this.price = '13$';
 	this.name = name;
 }
 
+Mouse.prototype.die = function() {
+	this.dead = true;
+}
 module.exports = Mouse;
